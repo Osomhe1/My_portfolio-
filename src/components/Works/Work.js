@@ -1,5 +1,7 @@
 import React from 'react'
-import {Box, Text, SimpleGrid , Link, GridItem, Image} from '@chakra-ui/react'
+import {Box, Text, SimpleGrid ,
+//  Link,
+ GridItem, Image} from '@chakra-ui/react'
 import Blogpost from '../../assests/blogpost.png'
 import Profile from '../../assests/profile.png'
 import Todolist from '../../assests/todolist.png'
@@ -70,7 +72,7 @@ export default function Work() {
                 >
               </Box> */}
               <Box>
-              <a target='_blank' href='https://netlifyblogosomhe.netlify.app/'>
+              <a target='_blank' rel="noreferrer" href='https://netlifyblogosomhe.netlify.app/'>
                 <Image borderRadius={10} src={Blogpost} />
                 </a>
                 </Box>
@@ -82,7 +84,7 @@ export default function Work() {
                w={imageWidth}
                >
                <Box>
-               <a target='_blank' href='https://osomhetodolist.netlify.app/' >
+               <a target='_blank' rel="noreferrer" href='https://osomhetodolist.netlify.app/' >
                 <Image 
 
                   borderRadius={10} src={Todolist} />
@@ -95,7 +97,7 @@ export default function Work() {
               marginTop={marginTop}
                w={imageWidth}
                ><Box>
-               <a target='_blank' href='https://profilecardosomhe.netlify.app/' >
+               <a target='_blank' rel="noreferrer" href='https://profilecardosomhe.netlify.app/' >
                 <Image borderRadius={10} src={Profile} />
                 </a>
                 </Box>
@@ -106,7 +108,7 @@ export default function Work() {
               w={imageWidth}
               >
               <Box>
-              <a target='_blank' href='https://osomheestore.netlify.app/' >
+              <a target='_blank' rel="noreferrer" href='https://osomheestore.netlify.app/' >
                 <Image borderRadius={10} src={Estore} />
                 </a>
                 </Box>
@@ -118,7 +120,7 @@ export default function Work() {
                w={imageWidth}
                >
                <Box>
-               <a target='_blank' href='https://osomhe-four-card-challange.netlify.app/' >
+               <a target='_blank' rel="noreferrer" href='https://osomhe-four-card-challange.netlify.app/' >
                 <Image borderRadius={10} src={FourBox} />
                 </a>
                 </Box>
