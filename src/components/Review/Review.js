@@ -17,7 +17,7 @@ export default function Review() {
       bg='#ccd6e0' 
       w='100%'
       >
-        <Box pb='5'  >
+        <Box pb='5' pt='3'  >
           <SimpleGrid
           margin={margin}
           mt='0'
@@ -29,7 +29,7 @@ export default function Review() {
                boxShadow='xl' 
             w={width2}
             >
-              <Box>
+              <Box >
                 <Text color='#5b687b' fontWeight={400} fontSize={fontSize}>
                   "Osomhe is a great person to work with. A team-player and
                   someone who is ready to learn."

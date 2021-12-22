@@ -11,6 +11,7 @@ export default function Skill() {
   const width = createBreakpoints({base:300, sm: 420, md: 650})
   const width2 = createBreakpoints({base:290, sm: 420, md: 600})
   const fontSize = createBreakpoints({base:10, sm:12, md:14});
+  const fontSize2 = createBreakpoints({base:25, sm:30, md:40});
 
     return (
       <Box bg='#ccd6e0'>
@@ -18,8 +19,9 @@ export default function Skill() {
           <Text
             textAlign='center'
             color='#4b5ebe'
-            fontSize={40}
+            fontSize={fontSize2}
             fontWeight={700}
+            pt='3'
           >
             Technical skill set
           </Text>

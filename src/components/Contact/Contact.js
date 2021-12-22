@@ -81,7 +81,7 @@ export default function Contact() {
           >
             Get in touch
           </Text>
-          <Text textAlign='center' fontWeight={fontWeight} fontSize={20} w={width}>
+          <Text p='2' textAlign='center' fontWeight={fontWeight} fontSize={20} w={width}>
             Have a Job or Project for me, or just want to say hi? Feel free to
             email me at  <br /> 
             <Link href='mailto:osomhe.aleogho@gmail.com'>
@@ -89,7 +89,9 @@ export default function Contact() {
             </Link> 
             or use the form below.
           </Text>
-          <Box alignItems='center' justifyContent='center' m={marSpan}>
+          <Box
+           
+           alignItems='center' justifyContent='center' m={marSpan}>
             <form 
             id="contact-form"
             ref={form} 

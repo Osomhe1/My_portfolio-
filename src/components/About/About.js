@@ -27,7 +27,7 @@ export default function About() {
           >
             software developer
           </Text>
-          <Box>
+          <Box p='2'>
             <Text color='#4b5ebe' fontSize={fontSize} fontWeight={700}>
               Hi there, I’m Osomhe
             </Text>
@@ -38,7 +38,13 @@ export default function About() {
           </Box>
         
         </Box>
-        <Box w={width2} m={margin} mb={marginTop} color='#5b687b' fontWeight={400} fontSize={20}>
+        <Box w={width2}
+         m={margin}
+          mb={marginTop}
+          color='#5b687b'
+          fontWeight={400}
+          p='4'
+          fontSize={20}>
           <Text mt={marginTop}>
             My name is Osomhe Aleogho. I’m a frontend developer with a
             full-stack background and a keen eye for good design. I love to make
