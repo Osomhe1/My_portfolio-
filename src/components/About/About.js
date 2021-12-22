@@ -1,9 +1,7 @@
 import React from 'react'
 import {Box, Text, 
-// Button 
 } from '@chakra-ui/react'
 import { createBreakpoints } from '@chakra-ui/theme-tools'
-// import { useHistory } from 'react-router-dom';
 
 
 
@@ -11,22 +9,15 @@ export default function About() {
 
     const margin = createBreakpoints({base: 4, sm:5, md: 'auto'});
     const marginTop = createBreakpoints({base: 5, sm: 6, md: 5});
-    const width = createBreakpoints({base: 420, md: 700, lg: 900})
+    const width = createBreakpoints({base:300, sm: 420, md: 700, lg: 900})
     const width2 = createBreakpoints({base: 'auto', md: 600});
-
-    
-    //  const history = useHistory();
-
-    // const handleClick = ()=>{
-    //   history.push('/contact');
-    // }
+    const fontSize = createBreakpoints({base:17, sm:20, md:35});
     
 
     return (
       <Box>
         <Box w={width} m='auto'>
           <Text
-            // color='#ccd6e0'
             color='#8895bf'
             fontWeight={500}
             textTransform='uppercase'
@@ -35,30 +26,15 @@ export default function About() {
             software developer
           </Text>
           <Box>
-            <Text color='#4b5ebe' fontSize={35} fontWeight={700}>
+            <Text color='#4b5ebe' fontSize={fontSize} fontWeight={700}>
               Hi there, I’m Osomhe
             </Text>
-            <Text fontWeight={700} fontSize={35} color='#333c66'>
+            <Text fontWeight={700} fontSize={fontSize} color='#333c66'>
               I help companys build amazing apps and websites with amazing
               features
             </Text>
           </Box>
-          {/* <Box>
-         
-          
-              <Button
-              onClick={handleClick}
-               bg='#4b5ebe' 
-               color='#fff' 
-               textTransform='uppercase'
-               >
-               <Link to="contact">
-                get in touch
-                </Link>
-                
-              </Button>
-            
-          </Box> */}
+        
         </Box>
         <Box w={width2} m={margin} mb={marginTop} color='#5b687b' fontWeight={400} fontSize={20}>
           <Text mt={marginTop}>

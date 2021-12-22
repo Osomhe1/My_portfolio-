@@ -8,8 +8,9 @@ export default function Skill() {
 
   const margin = createBreakpoints({base: 4, sm:'auto', md: 'auto'});
   const marginTop = createBreakpoints({base: 5, sm: 6, md: 5});
-  const width = createBreakpoints({base: 420, md: 650})
-  // const width2 = createBreakpoints({base: 420, md: 600})
+  const width = createBreakpoints({base:300, sm: 420, md: 650})
+  const width2 = createBreakpoints({base:290, sm: 420, md: 600})
+  const fontSize = createBreakpoints({base:10, sm:12, md:14});
 
     return (
       <Box bg='#ccd6e0'>
@@ -24,9 +25,7 @@ export default function Skill() {
           </Text>
           <Text
             textAlign='center'
-            // w={520}
             w={width}
-            // m='auto'
             m={margin}
             color='#5b687b'
             fontWeight={400}
@@ -39,9 +38,7 @@ export default function Skill() {
         <Box>
           <Grid>
             <Box 
-            // w={500}
             w={width}
-            //  m='auto'
             m={margin}
             mb={marginTop}
              >
@@ -55,9 +52,7 @@ export default function Skill() {
               </Text>
             </Box>
             <Box
-              // w={500}
               w={width}
-              // m='auto'
               m={margin}
               color='#5b687b'
               fontWeight={400}
@@ -76,6 +71,8 @@ export default function Skill() {
                 d='flex'
                 justifyContent='space-around'
                 mt={marginTop}
+                w={width2}
+                fontSize={fontSize}
 
               >
                 <ListItem bg='#4a5568' opacity='90%' color='#fff' p={2}>
@@ -93,15 +90,12 @@ export default function Skill() {
               </List>
             </Box>
             <Box
-              // w={500}
               w={width}
-              // m='auto'
               m={margin}
               mb={marginTop}
               color='#5b687b'
               fontWeight={400}
               fontSize={20}
-              // mb='5'
             >
               <Text
                 fontWeight={500}
@@ -120,6 +114,8 @@ export default function Skill() {
                 d='flex'
                 justifyContent='space-around'
                 mt={marginTop}
+                w={width2}
+                fontSize={fontSize}
               >
                 <ListItem bg='#4a5568' opacity='90%' color='#fff' p={2}>
                   Tailwind

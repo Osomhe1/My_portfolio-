@@ -15,20 +15,22 @@ export default function Work() {
   // const colSpan = createBreakpoints({ base: 3, md: 2 });
   const margin = createBreakpoints({base: 4, sm:'auto', md: 'auto'});
   const marginTop = createBreakpoints({base: 5, sm: 6, md: 5});
-  const width = createBreakpoints({base: 420, md: 700, lg: 900})
-  const width2 = createBreakpoints({base: 420, md: 600})
-  const imageWidth = createBreakpoints({base: 350, md: 250})
+  const width = createBreakpoints({base: 300, sm:420, md: 700, lg: 900})
+  const width2 = createBreakpoints({base: 310, sm:420, md: 600})
+  const imageWidth = createBreakpoints({base:250, sm: 350, md: 250})
+  const fontSize = createBreakpoints ({base:25, sm:30, md:40});
+
 
 
 
     return (
-      <Box bg='#edf2f7'>
+      <Box bg='#edf2f7' w='100vw'>
         <Box>
           <Box w={width2} alignItems='center' m='auto' justifyContent='center'>
             <Text
               textAlign='center'
               color='#4b5ebe'
-              fontSize={40}
+              fontSize={fontSize}
               fontWeight={700}
             >
               Some of my work
@@ -60,17 +62,10 @@ export default function Work() {
             >
               <GridItem 
               borderRadius={10} 
-              // m='auto' 
               m={margin}
               marginTop={marginTop}
               w={imageWidth}
               >
-              {/* <Box 
-              bgImage="url('/images/Abibola.jpeg')"
-              backgroundPosition="center"
-  backgroundRepeat="no-repeat"
-                >
-              </Box> */}
               <Box>
               <a target='_blank' rel="noreferrer" href='https://netlifyblogosomhe.netlify.app/'>
                 <Image borderRadius={10} src={Blogpost} />
@@ -78,7 +73,6 @@ export default function Work() {
                 </Box>
               </GridItem>
               <GridItem 
-              //  m='auto' 
               m={margin}
               marginTop={marginTop}
                w={imageWidth}
@@ -92,7 +86,6 @@ export default function Work() {
                   </Box>
               </GridItem>
               <GridItem 
-              // m='auto' 
               m={margin}
               marginTop={marginTop}
                w={imageWidth}
@@ -103,7 +96,6 @@ export default function Work() {
                 </Box>
               </GridItem>
               <GridItem 
-              // m='auto' 
               m={margin}
               w={imageWidth}
               >
@@ -114,7 +106,6 @@ export default function Work() {
                 </Box>
               </GridItem>
               <GridItem 
-              // m='auto'
               m={margin}
               marginTop={marginTop}
                w={imageWidth}
@@ -125,20 +116,6 @@ export default function Work() {
                 </a>
                 </Box>
               </GridItem>
-              {/* <GridItem 
-              h={320}  
-              bg='#4b5ebe'
-              //  m='auto'
-              m={margin}
-              marginTop={marginTop}
-                w={imageWidth}
-                >
-                <Box>
-                <a target='_blank' href='https://github.com/Osomhe1' >
-              <Text m='auto'  textAlign='center'>More of my work</Text>
-              </a>
-              </Box>
-              </GridItem> */}
             </SimpleGrid >
           </Box>
         </Box>

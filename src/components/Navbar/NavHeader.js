@@ -9,8 +9,6 @@ import { createBreakpoints } from '@chakra-ui/theme-tools'
      const {colorMode, toggleColorMode} = useColorMode()
      const isDark = colorMode === 'dark'
      const [display, changeDisplay] = useState('none')
-
-    //  const margin = createBreakpoints({base: 'auto', sm:'auto', md: 'auto'});
      const marginTop = createBreakpoints({base: 5, sm: 6, md: 5});
      const width = createBreakpoints({base: 420, md: 650})
 
@@ -24,7 +22,6 @@ import { createBreakpoints } from '@chakra-ui/theme-tools'
         </Box>
         <Spacer />
         <Flex 
-        // pos='fixed'
         top='1rem'
         align='center'
         right='1rem'>
@@ -33,11 +30,6 @@ import { createBreakpoints } from '@chakra-ui/theme-tools'
         display={['none', 'none', 'flex', 'flex' ]}
         >
         <Box d='flex' justifyContent='space-between'>
-        {/* <Box textTransform='uppercase' m='auto'>
-          <Text color='#4a5568' fontWeight={700} fontSize={20}>
-            osomhe <span color='#4b5ebe'>aleogho</span>
-          </Text>
-        </Box> */}
         <Box
           color='#4b5ebe'
           textTransform='uppercase'
@@ -141,9 +133,7 @@ import { createBreakpoints } from '@chakra-ui/theme-tools'
         flexDir='colum'
         align='center'
         >
-        <Box 
-        // d='flex'
-        //  justifyContent='center' 
+        <Box  
          align='center'
          >
         <Box textTransform='uppercase' m='auto' align='center'>
@@ -154,20 +144,12 @@ import { createBreakpoints } from '@chakra-ui/theme-tools'
         <Box
           color='#4b5ebe'
           textTransform='uppercase'
-        //   d='flex'
-        //   justifyContent='space-around'
-        //   m='auto'
-        // m={8}
-        //  m={margin}
          marginTop={marginTop}
           fontWeight={500}
           w={width}
         >
           <Box
-            // m='4'
-            // m='auto'
             m={marginTop}
-            // marginTop={marginTop}
             h={37}
 
             cursor='pointer'

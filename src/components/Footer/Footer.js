@@ -16,7 +16,7 @@ export default function Footer() {
 
     return (
       <Box bg='#ccd6e0' w='100%' fontSize={20}
-       bottom='' h='100' color='#4a5568' 
+       bottom='' minH='90' color='#4a5568' 
      
        >
        <Grid templateColumns='repeat(2, 1fr)'>

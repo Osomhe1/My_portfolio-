@@ -3,7 +3,6 @@ import { Box } from '@chakra-ui/react';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-// import Header from './components/Navbar/Header';
 import NavHeader from './components/Navbar/NavHeader';
 import Review from './components/Review/Review';
 import Skill from './components/Skills/Skill';

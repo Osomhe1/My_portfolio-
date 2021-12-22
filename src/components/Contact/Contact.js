@@ -15,15 +15,12 @@ export default function Contact() {
     const form = useRef('')
 
     const colSpan = createBreakpoints({ base: 2, md: 1 });
-    // const colTextSpan = createBreakpoints({ base: 700, md: 700 });
     const marSpan = createBreakpoints({base: 4, sm:'auto', md: 'auto'});
+    const margin = createBreakpoints({base: 'auto', sm:'auto', md: 'auto'});
+    const width = createBreakpoints({base:300, sm: 420, md: '700px'})
+    const textAreaWidth = createBreakpoints({base:280, sm: 420, md: '700px'})
+    const fontWeight = createBreakpoints({base:400, md:500});
 
-    const width = createBreakpoints({base: 420, md: '700px'})
-
-    // const isValidEmail = email => {
-    // const regex = /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    // return regex.test(String(email).toLowerCase());
-    // };
 
     const handleOnSubmit = (e) => {
     e.preventDefault();
@@ -65,26 +62,10 @@ export default function Contact() {
     setName('');
         setEmail('');
         setMessage('');
-
-
-
-        //     }
-        //     else if(email !== isValidEmail){
-        //     alert("email is invalid.")
-        //     Swal.fire({
-        //   icon: 'error',
-        //   title: 'Ooops, something went wrong',
-        //   // text: error.text,
-        // })
-        
-          }
+       }
              else {
         alert('Please fill in all fields.');
     }
-
-
-
-
   };
 
 
@@ -100,7 +81,7 @@ export default function Contact() {
           >
             Get in touch
           </Text>
-          <Text textAlign='center' fontWeight={500} fontSize={20} w={width}>
+          <Text textAlign='center' fontWeight={fontWeight} fontSize={20} w={width}>
             Have a Job or Project for me, or just want to say hi? Feel free to
             email me at  <br /> 
             <Link href='mailto:osomhe.aleogho@gmail.com'>
@@ -115,12 +96,8 @@ export default function Contact() {
             onSubmit={(e) => handleOnSubmit(e)}
             >
               <Grid
-              // colSpan={colSpan}
                 templateColumns='repeat(2, 1fr)'
-                //   alignItems='center'
-                //   justifyContent='center'
-                  // m='auto'
-                // w={750}
+              
               >
                 <GridItem m={marSpan} colSpan={colSpan}>
                   <Input
@@ -132,7 +109,6 @@ export default function Contact() {
                     name='name'
                     mb={2}
                     mt={2}
-                    // w={350}
                     
                   />
                 </GridItem>
@@ -144,7 +120,6 @@ export default function Contact() {
                     required
                     size='lg'
                     name='email'
-                    // w={350}
                     mb={5}
                     mt={5}
                   />
@@ -152,14 +127,16 @@ export default function Contact() {
                 </Grid>
                 <Grid templateColumns='repeat(1, 1fr)'>
               
-              <GridItem w={width} m={marSpan} colSpan={colSpan}  mt='5'>
+              <GridItem 
+              w={textAreaWidth}
+               m={margin} 
+               colSpan={colSpan}  mt='5'>
                 <Textarea
-                  // w={450}
                   h={200}
                   size='lg'
                    onChange={e => setMessage(e.target.value)}
                   value={message}
-                  placeholder='Type your message'
+                  placeholder='Your message'
                   name='message'
                 />
               </GridItem >
@@ -176,8 +153,6 @@ export default function Contact() {
                 >
                   send message
                 </Button>
-
-                
               </Box>
             </form>
           </Box>
