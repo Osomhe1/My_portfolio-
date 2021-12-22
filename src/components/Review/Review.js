@@ -13,7 +13,10 @@ export default function Review() {
 
 
     return (
-      <Box bg='#ccd6e0' w='100vw'>
+      <Box 
+      bg='#ccd6e0' 
+      w='100%'
+      >
         <Box pb='5'  >
           <SimpleGrid
           margin={margin}
@@ -21,6 +24,7 @@ export default function Review() {
           w={width}
             >
             <Box bg='#fff'
+            //  m='auto'
               p='3'
                boxShadow='xl' 
             w={width2}

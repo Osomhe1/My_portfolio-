@@ -22,6 +22,8 @@ export default function About() {
             fontWeight={500}
             textTransform='uppercase'
             fontSize={17}
+            mt={marginTop}
+            mb={2}
           >
             software developer
           </Text>

@@ -24,7 +24,7 @@ export default function Work() {
 
 
     return (
-      <Box bg='#edf2f7' w='100vw'>
+      <Box bg='#edf2f7' w='100%'>
         <Box>
           <Box w={width2} alignItems='center' m='auto' justifyContent='center'>
             <Text
